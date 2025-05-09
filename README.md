@@ -1,6 +1,6 @@
-# GPLDK (Gettis Programming Language Development Kit)
+# GettisPLDK (Gettis Programming Language Development Kit)
 
-**GPLDK** is a development kit for **GPL** (Gettis Programming Language), currently focused on the **lexer** and **parser**. **GPLDK** is being developed using Python.
+**GettisPLDK** is a development kit for **GettisPL** (Gettis Programming Language), currently focused on the **lexer** and **parser**. **GettisPLDK** is being developed using Python.
 
 ## Project Status
 
@@ -16,12 +16,12 @@ The project is in the **Alpha** stage. Only the lexer and parser are being worke
 ### Lexer
 - **Version:** 0.1.0
 - **Status:** Under development
-- **Description:** The lexer will tokenize **GPL** code into recognizable tokens for parsing.
+- **Description:** The lexer will tokenize **GettisPL** code into recognizable tokens for parsing.
 
 ### Parser
 - **Version:** 0.1.0
 - **Status:** Under development
-- **Description:** The parser will convert the tokenized **GPL** code into an abstract syntax tree (AST).
+- **Description:** The parser will convert the tokenized **GettisPL** code into an abstract syntax tree (AST).
 
 ## Contributions
 
@@ -29,8 +29,8 @@ We welcome contributions. Please feel free to open **Issues** or submit **Pull R
 
 ## License
 
-**GPLDK** is licensed under the **MIT License**. See the LICENSE file for details.
+**GettisPLDK** is licensed under the **MIT License**. See the LICENSE file for details.
 
 ---
 
-**GPLDK** is under active development. Stay tuned for updates on additional tools and features!
+**GettisPLDK** is under active development. Stay tuned for updates on additional tools and features!
