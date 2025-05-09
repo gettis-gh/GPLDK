@@ -1,6 +1,6 @@
 # GPLDK (Gettis Programming Language Development Kit)
 
-**GPLDK** is a development kit for **GPL** (Gettis Programming Language), currently focused on the **lexer** and **parser**. **GPL** is being developed using Python.
+**GPLDK** is a development kit for **GPL** (Gettis Programming Language), currently focused on the **lexer** and **parser**. **GPLDK** is being developed using Python.
 
 ## Project Status
 
