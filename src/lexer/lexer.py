@@ -12,10 +12,17 @@ from service.tokenize_service import tokenize
 matchers: List[Matcher] = []
 load_matchers(matchers)
 
-def main(input_str: str):
+def main(input_str: str, output: Optional[str] = None):
     tokens = tokenize(input_str, matchers)
-    for token in tokens:
-        print(token)
+    
+    if output:
+        import json, os
+        os.makedirs(os.path.dirname(output), exist_ok=True)
+        with open(output, "w") as f:
+            json.dump(tokens, f, indent=2)
+    else:
+        for token in tokens:
+            print(token)
 
 def read_file(file_path: str) -> str:
     try:
@@ -30,9 +37,11 @@ def read_file(file_path: str) -> str:
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Lexer CLI for tokenizing strings or files.")
-    parser.add_argument('-f', '--file', type=str, help="Path to the .gettilp file to tokenize.")
+    parser.add_argument('-f', '--file', type=str, help="Path to the .gt file to tokenize.")
+    parser.add_argument('-o', '--output', type=str, help="Path to save the output tokens as a JSON file.")
     parser.add_argument('input', nargs='?', type=str, help="The string to tokenize. Optional if a file is provided.")
     return parser.parse_args()
+
 
 if __name__ == "__main__":
     args = parse_arguments()
@@ -45,4 +54,4 @@ if __name__ == "__main__":
         print("You must provide either a string or a file to tokenize.")
         exit(1)
     
-    main(input_str)
+    main(input_str, output=args.output)  # Aquí pasas `args.output`

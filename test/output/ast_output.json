@@ -1,0 +1,30 @@
+[
+  {
+    "type": "InvocationNode",
+    "pathAccess": {
+      "type": "PathAccessNode",
+      "steps": [
+        {
+          "type": "IdentifierNode",
+          "name": "root"
+        }
+      ]
+    },
+    "invoker": {
+      "type": "IdentifierNode",
+      "name": "print"
+    },
+    "arguments": [
+      {
+        "name": {
+          "type": "IdentifierNode",
+          "name": "value"
+        },
+        "value": {
+          "type": "LiteralNode",
+          "value": "hola"
+        }
+      }
+    ]
+  }
+]

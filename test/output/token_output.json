@@ -1,0 +1,58 @@
+[
+  {
+    "type": "IDENTIFIER",
+    "value": "root",
+    "length": 4,
+    "line": 1,
+    "column": 1
+  },
+  {
+    "type": "DOT",
+    "value": ".",
+    "length": 1,
+    "line": 1,
+    "column": 5
+  },
+  {
+    "type": "IDENTIFIER",
+    "value": "print",
+    "length": 5,
+    "line": 1,
+    "column": 6
+  },
+  {
+    "type": "LPAREN",
+    "value": "(",
+    "length": 1,
+    "line": 1,
+    "column": 11
+  },
+  {
+    "type": "IDENTIFIER",
+    "value": "value",
+    "length": 5,
+    "line": 1,
+    "column": 12
+  },
+  {
+    "type": "COLON",
+    "value": ":",
+    "length": 1,
+    "line": 1,
+    "column": 17
+  },
+  {
+    "type": "LITERAL",
+    "value": "hola",
+    "length": 6,
+    "line": 1,
+    "column": 19
+  },
+  {
+    "type": "RPAREN",
+    "value": ")",
+    "length": 1,
+    "line": 1,
+    "column": 25
+  }
+]

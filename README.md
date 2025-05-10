@@ -20,7 +20,7 @@ The project is in the **Alpha** stage. Only the lexer and parser are being worke
 
 ### Parser
 - **Version:** 0.1.0
-- **Status:** Under development
+- **Status:** Active and running
 - **Description:** The parser will convert the tokenized **GettisPL** code into an abstract syntax tree (AST).
 
 ---
