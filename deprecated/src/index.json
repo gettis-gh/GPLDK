@@ -1,0 +1,24 @@
+{
+    "context": "this",
+    "args": {
+        "name": {
+            "context": "this",
+            "args": {
+                "value": "myVar"
+            },
+            "call": "string"
+        },
+        "mut": {
+            "context": "this",
+            "args": {
+                "value": {
+                    "context": "this",
+                    "args": {},
+                    "call": "const"
+                }
+            },
+            "call": "mut"
+        }
+    },
+    "call": "define"
+}

@@ -1,0 +1,4 @@
+this.define(
+    name: root.string("myVar"),
+    value: root.int("5")
+);

@@ -15,21 +15,13 @@ The project is in the **Alpha** stage. Only the lexer and parser are being worke
 
 ### Lexer
 - **Version:** 0.1.0
-- **Status:** Under development
+- **Status:** Active and running
 - **Description:** The lexer will tokenize **GettisPL** code into recognizable tokens for parsing.
 
 ### Parser
 - **Version:** 0.1.0
 - **Status:** Under development
 - **Description:** The parser will convert the tokenized **GettisPL** code into an abstract syntax tree (AST).
-
-## Contributions
-
-We welcome contributions. Please feel free to open **Issues** or submit **Pull Requests** for any improvements.
-
-## License
-
-**GettisPLDK** is licensed under the **MIT License**. See the LICENSE file for details.
 
 ---
 
