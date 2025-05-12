@@ -1,6 +1,6 @@
-from node.path_access_node import PathAccessNode
+from node.path_node import PathAccessNode
 from matcher.utils.dot_matcher import match as match_dot 
-from matcher.identifier_matcher import match as match_identifier 
+from matcher.first_grade.identifier_matcher import match as match_identifier 
 
 def match(tokens):
     steps = []

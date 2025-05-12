@@ -5,7 +5,7 @@ from node.identifier_node import IdentifierNode
 from node.literal_node import LiteralNode
 
 class InvocationNode(Node):
-    def __init__(self, pathAccess: PathAccessNode, invoker: IdentifierNode, arguments: List[Dict[str, Any]]):
+    def __init__(self, path: PathAccessNode, invoker: IdentifierNode, arguments: List[Dict[str, Any]]):
         if not isinstance(pathAccess, PathAccessNode):
             raise ValueError("pathAccess debe ser una instancia de PathAccessNode")
         if not isinstance(invoker, IdentifierNode):
@@ -22,7 +22,7 @@ class InvocationNode(Node):
             "type": "InvocationNode",
             "pathAccess": self.pathAccess.to_dict(),
             "invoker": self.invoker.to_dict(),
-            "arguments": [
+            "payload": [
                 {"name": arg["name"].to_dict(), "value": arg["value"].to_dict()} for arg in self.arguments
             ]
         }

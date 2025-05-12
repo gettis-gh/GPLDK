@@ -1,1 +1,1 @@
-root.print(value: "hola")
+root.print "hola" print
