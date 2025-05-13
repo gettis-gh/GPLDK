@@ -11,10 +11,7 @@ class InvocationNode(Node):
         if not isinstance(invoker, IdentifierNode):
             raise ValueError("invoker debe ser una instancia de IdentifierNode")
         
-        self.arguments = arguments or []  # ← Aquí se maneja el None
-
-        if not all(isinstance(arg['value'], (LiteralNode, InvocationNode)) for arg in self.arguments):
-            raise ValueError("Cada valor en los argumentos debe ser una instancia de LiteralNode o InvocationNode")
+        self.arguments = arguments or []
 
         self.path = path
         self.invoker = invoker
@@ -25,6 +22,6 @@ class InvocationNode(Node):
             "path": self.path.to_dict(),
             "invoker": self.invoker.to_dict(),
             "payload": [
-                {"name": arg["name"].to_dict(), "value": arg["value"].to_dict()} for arg in self.arguments
+                {"name": arg["name"], "value": arg["value"].to_dict()} for arg in self.arguments
             ]
         }

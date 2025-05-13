@@ -13,13 +13,12 @@ matchers: List[Matcher] = []
 load_matchers(matchers)
 
 def main(tokens: List[Token], output: Optional[str] = None):
-    # Llamada al parser para generar el AST
     ast = parse(tokens, matchers)
     
     if output:
         os.makedirs(os.path.dirname(output), exist_ok=True)
         with open(output, "w") as f:
-            json.dump([node.to_dict() for node in ast], f, indent=2)  # Guardar el AST en un archivo JSON
+            json.dump([node.to_dict() for node in ast], f, indent=2)
     else:
         for node in ast:
             print(node)

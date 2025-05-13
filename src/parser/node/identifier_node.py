@@ -1,5 +1,4 @@
 from type.node_type import Node
-from type.node_type import Node
 from typing import Dict, Any
 
 class IdentifierNode(Node):

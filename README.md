@@ -1,6 +1,6 @@
-# GettisPLDK (Gettis Programming Language Development Kit)
+# GTDK (GettisLang Development Kit)
 
-**GettisPLDK** is a development kit for **GettisPL** (Gettis Programming Language), currently focused on the **lexer** and **parser**. **GettisPLDK** is being developed using Python.
+**GTDK** is a development kit for **GettisLang** (Gettis Programming Language), currently focused on the **lexer** and **parser**. **GTDK** is being developed using Python.
 
 ## Project Status
 
@@ -16,13 +16,13 @@ The project is in the **Alpha** stage. Only the lexer and parser are being worke
 ### Lexer
 - **Version:** 0.1.0
 - **Status:** Active and running
-- **Description:** The lexer will tokenize **GettisPL** code into recognizable tokens for parsing.
+- **Description:** The lexer will tokenize **GettisLang** code into recognizable tokens for parsing.
 
 ### Parser
-- **Version:** 0.1.0
+- **Version:** 0.2.0
 - **Status:** Active and running
-- **Description:** The parser will convert the tokenized **GettisPL** code into an abstract syntax tree (AST).
+- **Description:** The parser will convert the tokenized **GettisLang** code into an abstract syntax tree (AST).
 
 ---
 
-**GettisPLDK** is under active development. Stay tuned for updates on additional tools and features!
+**GTDK** is under active development. Stay tuned for updates on additional tools and features!

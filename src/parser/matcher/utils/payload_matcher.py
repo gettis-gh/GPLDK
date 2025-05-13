@@ -1,7 +1,7 @@
 def match(tokens):
     from matcher.utils.expression_matcher import match as match_expression
 
-    params = {}
+    params = []
     index = 0
     paren_opened = False
 
@@ -10,10 +10,13 @@ def match(tokens):
         index += 1
 
     while index < len(tokens) and paren_opened:
-        if tokens[index]["type"] == "RPAREN" or tokens[index]["type"] == "COLON":
+        if tokens[index]["type"] == "RPAREN":
             paren_opened = False
-            index += 1
             break
+
+        if tokens[index]["type"] == "COLON" or tokens[index]["type"] == "COMMA":
+            index += 1
+            continue
 
         if index + 1 < len(tokens) and tokens[index + 1]["type"] == "COLON":
             name = tokens[index]["value"]
@@ -21,14 +24,13 @@ def match(tokens):
 
             value = match_expression(tokens[index:])
             if value:
-                params[name] = value["node"]
+                params.append({"name": name, "value": value["node"]})
                 index += value["length"]
                 continue
             else:
                 break
         else:
             index += 1
-            continue
 
     if len(params) > 0:
         return {"node": params, "length": index}

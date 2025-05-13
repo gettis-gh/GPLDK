@@ -23,6 +23,6 @@ def parse(tokens: List[dict], matchers: list):
             token = tokens[index]
             print("Syntax Error:")
             print(f"  → Unexpected token '{token['value']}' ({token['type']}) at line {token['line']}, column {token['column']}")
-            sys.exit(1)
+            return nodes
 
     return nodes

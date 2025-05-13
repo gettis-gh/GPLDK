@@ -1,0 +1,114 @@
+[
+  {
+    "type": "InvocationNode",
+    "path": {
+      "type": "PathAccessNode",
+      "steps": [
+        {
+          "type": "IdentifierNode",
+          "name": "root"
+        }
+      ]
+    },
+    "invoker": {
+      "type": "IdentifierNode",
+      "name": "define"
+    },
+    "payload": [
+      {
+        "name": "name",
+        "value": {
+          "type": "InvocationNode",
+          "path": {
+            "type": "PathAccessNode",
+            "steps": [
+              {
+                "type": "IdentifierNode",
+                "name": "root"
+              }
+            ]
+          },
+          "invoker": {
+            "type": "IdentifierNode",
+            "name": "string"
+          },
+          "payload": [
+            {
+              "name": "value",
+              "value": {
+                "type": "LiteralNode",
+                "value": "myVar"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "value",
+        "value": {
+          "type": "InvocationNode",
+          "path": {
+            "type": "PathAccessNode",
+            "steps": [
+              {
+                "type": "IdentifierNode",
+                "name": "root"
+              }
+            ]
+          },
+          "invoker": {
+            "type": "IdentifierNode",
+            "name": "string"
+          },
+          "payload": [
+            {
+              "name": "value",
+              "value": {
+                "type": "LiteralNode",
+                "value": "myVal"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "type": "InvocationNode",
+    "path": {
+      "type": "PathAccessNode",
+      "steps": [
+        {
+          "type": "IdentifierNode",
+          "name": "root"
+        }
+      ]
+    },
+    "invoker": {
+      "type": "IdentifierNode",
+      "name": "print"
+    },
+    "payload": [
+      {
+        "name": "value",
+        "value": {
+          "type": "InvocationNode",
+          "path": {
+            "type": "PathAccessNode",
+            "steps": [
+              {
+                "type": "IdentifierNode",
+                "name": "this"
+              }
+            ]
+          },
+          "invoker": {
+            "type": "IdentifierNode",
+            "name": "myVar"
+          },
+          "payload": []
+        }
+      }
+    ]
+  }
+]
