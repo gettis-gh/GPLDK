@@ -1,0 +1,1 @@
+python src/lexer/lexer.py -f test/main.gt -o test/output/token_output.json

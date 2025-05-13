@@ -22,7 +22,7 @@ def main(tokens: List[Token], output: Optional[str] = None):
             json.dump([node.to_dict() for node in ast], f, indent=2)  # Guardar el AST en un archivo JSON
     else:
         for node in ast:
-            print(node)  # Mostrar el AST en consola
+            print(node)
 
 def read_tokens(file_path: str) -> List[Token]:
     try:

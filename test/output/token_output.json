@@ -21,17 +21,38 @@
     "column": 6
   },
   {
-    "type": "LITERAL",
-    "value": "hola",
-    "length": 6,
+    "type": "LPAREN",
+    "value": "(",
+    "length": 1,
     "line": 1,
-    "column": 12
+    "column": 11
   },
   {
     "type": "IDENTIFIER",
-    "value": "print",
+    "value": "value",
     "length": 5,
-    "line": 1,
-    "column": 19
+    "line": 2,
+    "column": 5
+  },
+  {
+    "type": "COLON",
+    "value": ":",
+    "length": 1,
+    "line": 2,
+    "column": 10
+  },
+  {
+    "type": "LITERAL",
+    "value": "hola",
+    "length": 6,
+    "line": 2,
+    "column": 12
+  },
+  {
+    "type": "RPAREN",
+    "value": ")",
+    "length": 1,
+    "line": 3,
+    "column": 1
   }
 ]
