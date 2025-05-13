@@ -5,7 +5,7 @@
 ## Project Status
 
 ### Current Version
-- **Version:** 1.0.0 (Alpha)
+- **Version:** 1.0.1 (Alpha)
 - **Release Date:** May 2025
 - **Development Status:** Active
 
@@ -19,7 +19,7 @@ The project is in the **Alpha** stage. Only the lexer and parser are being worke
 - **Description:** The lexer will tokenize **GettisLang** code into recognizable tokens for parsing.
 
 ### Parser
-- **Version:** 0.2.0
+- **Version:** 0.1.1
 - **Status:** Active and running
 - **Description:** The parser will convert the tokenized **GettisLang** code into an abstract syntax tree (AST).
 
