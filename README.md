@@ -1,3 +1,31 @@
+# GettisLang
+
+## My Language
+
+It’s not traditional.  
+It’s not optimal.  
+It’s not simple.  
+
+But it’s **consistent**.  
+It’s **expressive**.  
+It’s **mine**.  
+
+No keywords.  
+No types.  
+No hidden scopes.  
+
+Just calls.  
+Just objects.  
+Just paths.  
+
+> **Programming can be poetic.**  
+> **Art doesn’t follow rules.**
+
+This language isn’t here to win benchmarks.  
+It’s here to explore.  
+To play.  
+To **create**.
+
 # GTDK (GettisLang Development Kit)
 
 **GTDK** is a development kit for **GettisLang** (Gettis Programming Language), currently focused on the **lexer** and **parser**. **GTDK** is being developed using Python.
