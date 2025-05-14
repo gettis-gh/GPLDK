@@ -26,27 +26,31 @@ It’s here to explore.
 To play.  
 To **create**.
 
-# GTDK (GettisLang Development Kit)
+## What is GettisLang?
 
-**GTDK** is a development kit for **GettisLang** (Gettis Programming Language), currently focused on the **lexer** and **parser**. **GTDK** is being developed using Python.
+GettisLang is a programming language designed to explore and experiment with the boundaries of how we think about code. It doesn't follow traditional rules — instead, it encourages creativity, exploration, and expression. GettisLang is built to be **yours**, to represent your own ideas, not the ideals set by others.
 
-## Project Status
+## GTDK (GettisLang Development Kit)
 
-### Current Version
+**GTDK** is a development kit for **GettisLang** (Gettis Programming Language). It is being developed using Python.
+
+### Project Status
+
+#### Current Version
 - **Version:** 1.0.1 (Alpha)
 - **Release Date:** May 2025
 - **Development Status:** Active
 
 The project is in the **Alpha** stage. Only the lexer and parser are being worked on at this stage, and they are still under development.
 
-## Tools in Development
+### Tools in Development
 
-### Lexer
+#### Lexer
 - **Version:** 0.1.0
 - **Status:** Active and running
 - **Description:** The lexer will tokenize **GettisLang** code into recognizable tokens for parsing.
 
-### Parser
+#### Parser
 - **Version:** 0.1.1
 - **Status:** Active and running
 - **Description:** The parser will convert the tokenized **GettisLang** code into an abstract syntax tree (AST).
